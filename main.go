@@ -20,13 +20,13 @@ func ToPig(words []string) string {
 		} else {
 			words[i] = w1[1:] + w1[:1] + pig
 		}
-		if w1[0] ==  
+		  
 	}
 	pigwords := strings.Join(words, " ")
 	return pigwords
 }
 
 func main() {
-	word := []string(Splitter("I"))
+	word := []string(Splitter("hello world"))
 	fmt.Printf(ToPig(word))
 }
